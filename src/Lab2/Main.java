@@ -7,9 +7,11 @@ public class Main {
     public static void main(String[] args) {
         int i = multiplication(memberVariable1, memberVariable2);
         int ii = division(memberVariable2,memberVariable1);
+        int iii = modulo(10, 7);
 
                 System.out.println(i);
-        System.out.println(i);
+        System.out.println(division(memberVariable2,memberVariable1));
+        System.out.println(modulo(memberVariable2,memberVariable1));
 
 
 }
@@ -25,7 +27,7 @@ public static int division(int first, int second){
 }
 
 public static int modulo(int first, int second) {
-        int modulo = second / first;
+        int modulo = second % first;
         return modulo;
 }
 
