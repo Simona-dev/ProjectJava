@@ -1,3 +1,7 @@
+import javax.swing.plaf.synth.SynthOptionPaneUI;
+import java.util.concurrent.Callable;
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -14,98 +18,107 @@ public class Main {
 
         printMyname("Simona");
 
-        int add = sum(255, 27);
+        Calculator op = new Calculator();
+        int add = op.sum(255, 27);
         System.out.println(add);
 
-        float divide = div(22, 3f);
+        Calculator op1 = new Calculator();
+        float divide = op1.div(22, 3f);
         System.out.println(divide);
 
-        int ecuation1 = operation1(-5, 8, 6);
+        Calculator op2 = new Calculator();
+        int ecuation1 = op2.operation1(-5, 8, 6);
         System.out.println(ecuation1);
 
-        int modulo = modulo1(55, 9, 9);
+        Calculator op3 = new Calculator();
+        int modulo = op3.modulo1(55, 9, 9);
         System.out.println(modulo);
 
-        int ecuation2 = operation2(20, -3, 5, 8);
+        Calculator op4 = new Calculator();
+        int ecuation2 = op4.operation2(20, -3, 5, 8);
         System.out.println(ecuation2);
 
-        int ecuation3 = operation3(5, 15, 3, 2, 8, 3);
+        Calculator op5 = new Calculator();
+        int ecuation3 = op5.operation3(5, 15, 3, 2, 8, 3);
         System.out.println(ecuation3);
 
-        String text = "Rezultatul este: ";
-        System.out.println(text + adunare(27, 27));
-        System.out.println(text + scadere(100.5f, 5.25f, 25.5f, 27.2f));
-        System.out.println(text + inmultire(24, 10, 6, 2));
-        System.out.println(text + impartire(2566, 122));
+        Calculator calc = new Calculator();
+        int adunare = calc.adunare(27,27);
+        System.out.println("Rezultatul este: " + adunare);
+
+        Calculator sub = new Calculator();
+        float scadere = sub.scadere (100.5f, 5.25f, 25.5f, 27.2f);
+        System.out.println("Rezultatul este: " + scadere);
+
+        Calculator multi = new Calculator();
+        int inmultire = multi.inmultire(24, 10, 6, 2);
+        System.out.println("Rezultatul este: " + inmultire);
+
+        Calculator div2 = new Calculator();
+        int impartire = div2.impartire(2566, 122);
+        System.out.println("Rezultatul este: " + impartire);
+
         printJava();
 
-        int average = avg(25, 2, 15);
+        Calculator media = new Calculator();
+        int average = media.avg(25, 2, 15);
         System.out.println(average);
 
         printJava2();
 
-        String text2 = "Restul impartirii este: ";
-        System.out.println(text2 + modulo(20, 6));
+        Calculator mod = new Calculator();
+        int modulo1 = mod.modulo(20, 6);
+        System.out.println("Restul impartirii este: " + modulo1);
 
-        float C = formulaC(90f);
-        System.out.println(C);
+        Calculator celsius = new Calculator();
+        float C = celsius.formulaCelsius(90f);
+        System.out.println("Celsius value is: " + C);
+
+        LogicalOp op6 = new LogicalOp();
+        int number = op6.checkBiggerNumber(25, 7);
+        System.out.println("The biggest number is: " + number);
+
+        LogicalOp op7 = new LogicalOp();
+        String text = op7.EqualText();
+        System.out.println(text);
+
+        LogicalOp op8 = new LogicalOp();
+        String text1 = op8.NumberText();
+        System.out.println(text1);
+
+        LogicalOp op9 = new LogicalOp();
+        String number1 = op9.SnowCm();
+        System.out.println(number1);
+
+        LogicalOp op10 = new LogicalOp();
+        String text2 = op10.EqualOrLower();
+        System.out.println(text2);
+
+        LogicalOp op11 = new LogicalOp();
+        String text3 = op11.NumberSwitch();
+        System.out.println(text3);
+
+        LogicalOp op12 = new LogicalOp();
+        String text4 = op12.isNumberEven();
+        System.out.println(text4);
+
+        LogicalOp op13 = new LogicalOp();
+        String text5 = op13.isEligibleToVote();
+        System.out.println(text5);
+
+        LogicalOp op14 = new LogicalOp();
+        int number2 = op14.returnBiggerNumber();
+        System.out.println(number2);
+
+
 
     }
 
 
-    public static void printMyname(String name) {
-        System.out.println("Hello " + name);
-    }
 
-    public static int sum(int first, int second) {
-        int sum = first + second;
-        return sum;
-    }
 
-    public static float div(float first, float second) {
-        float div = first / second;
-        return div;
-    }
-
-    public static int operation1(int first, int second, int third) {
-        int operation1 = first + (second * third);
-        return operation1;
-    }
-
-    public static int modulo1(int first, int second, int third) {
-        int modulo1 = (first + second) % third;
-        return modulo1;
-    }
-
-    public static int operation2(int first, int second, int third, int fourth) {
-        int operation2 = first + second * third / fourth;
-        return operation2;
-    }
-
-    public static int operation3(int first, int second, int third, int fourth, int fifth, int sixth) {
-        int operation3 = first + second / third * fourth - fifth % sixth;
-        return operation3;
-    }
-
-    public static int adunare(int first, int second) {
-        int result = first + second;
-        return result;
-    }
-
-    public static float scadere(float first, float second, float third, float fourth) {
-        float result = first - second - third - fourth;
-        return result;
-    }
-
-    public static int inmultire(int first, int second, int third, int fourth) {
-        int result = first * second * third;
-        return result;
-    }
-
-    public static int impartire(int first, int second) {
-        int result = first / second;
-        return result;
-    }
+    public static void printMyname(String name)
+    { System.out.println("Hello " + name);}
 
     public static void printJava() {
         System.out.println("        J     a   v     v   a     ");
@@ -113,12 +126,6 @@ public class Main {
         System.out.println("     J  J   aaaaa   V V   aaaaa   ");
         System.out.println("      JJ   a     a   V   a     a  ");
     }
-
-    public static int avg(int first, int second, int third) {
-        int result = (first + second + third) / 3;
-        return result;
-    }
-
     public static void printJava2() {
         System.out.println(" + \" \" \" \" \" + ");
         System.out.println("  [|  o o  |]");
@@ -128,15 +135,6 @@ public class Main {
 
     }
 
-    public static int modulo(int first, int second) {
-        int modulo = first % second;
-        return modulo;
 
-    }
-
-    public static float formulaC(float first) {
-        float result = 5f/9f * (first - 32f);
-        return result;
-    }
 }
 
