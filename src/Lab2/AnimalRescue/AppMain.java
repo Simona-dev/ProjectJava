@@ -6,11 +6,12 @@ public class AppMain {
         Dog dog1 = new Dog();
         dog1.setName("Blaze");
         dog1.setHeightInCm(76);
-        dog1.setBreed("Golden Retriever");
         dog1.setColor("brown");
         System.out.println("My dog name is " + dog1.getName() + " and is tall " + dog1
                 .getHeightInCm() + " cm .");
-        System.out.println("The breed is " + dog1.getBreed() + " and his color is " + dog1.getColor() + ".");
+
+        dog1.setMale(true);
+        System.out.println(dog1.isMale());
 
 
         Girl girl1 = new Girl();
