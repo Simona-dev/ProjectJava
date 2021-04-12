@@ -4,6 +4,11 @@ public class People {
     private String name;
     private int age;
     private float weightInKg;
+    private int heightInCm;
+
+    public void setHeightInCm(int heightInCm) {
+        this.heightInCm = heightInCm;
+    }
 
     public float getWeightInKg() {
         return weightInKg;
@@ -12,17 +17,6 @@ public class People {
     public void setWeightInKg(float weightInKg) {
         this.weightInKg = weightInKg;
     }
-
-    public int getHeightInCm() {
-        return heightInCm;
-    }
-
-    public void setHeightInCm(int heightInCm) {
-        this.heightInCm = heightInCm;
-    }
-
-    private int heightInCm;
-
 
     public String getName() {
         return name;
@@ -38,5 +32,8 @@ public class People {
 
     public void setAge(int age) {
         this.age = age;
+    }
+    public void eat(int value){
+        System.out.println("Yummy yummy");
     }
 }

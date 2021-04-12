@@ -1,9 +1,5 @@
-import javax.swing.plaf.synth.SynthOptionPaneUI;
-import java.util.concurrent.Callable;
-import java.util.Scanner;
-
 public class Main {
-
+// Lab2 and Lab3
     public static void main(String[] args) {
         // write your code here
         System.out.println("Hello World!");
@@ -18,97 +14,91 @@ public class Main {
 
         printMyname("Simona");
 
-        Calculator op = new Calculator();
+        Calculator1 op = new Calculator1();
         int add = op.sum(255, 27);
         System.out.println(add);
 
-        Calculator op1 = new Calculator();
+        Calculator1 op1 = new Calculator1();
         float divide = op1.div(22, 3f);
         System.out.println(divide);
 
-        Calculator op2 = new Calculator();
+        Calculator1 op2 = new Calculator1();
         int ecuation1 = op2.operation1(-5, 8, 6);
         System.out.println(ecuation1);
 
-        Calculator op3 = new Calculator();
+        Calculator1 op3 = new Calculator1();
         int modulo = op3.modulo1(55, 9, 9);
         System.out.println(modulo);
 
-        Calculator op4 = new Calculator();
+        Calculator1 op4 = new Calculator1();
         int ecuation2 = op4.operation2(20, -3, 5, 8);
         System.out.println(ecuation2);
 
-        Calculator op5 = new Calculator();
+        Calculator1 op5 = new Calculator1();
         int ecuation3 = op5.operation3(5, 15, 3, 2, 8, 3);
         System.out.println(ecuation3);
 
-        Calculator calc = new Calculator();
+        Calculator1 calc = new Calculator1();
         int adunare = calc.adunare(27,27);
         System.out.println("Rezultatul este: " + adunare);
 
-        Calculator sub = new Calculator();
+        Calculator1 sub = new Calculator1();
         float scadere = sub.scadere (100.5f, 5.25f, 25.5f, 27.2f);
         System.out.println("Rezultatul este: " + scadere);
 
-        Calculator multi = new Calculator();
+        Calculator1 multi = new Calculator1();
         int inmultire = multi.inmultire(24, 10, 6, 2);
         System.out.println("Rezultatul este: " + inmultire);
 
-        Calculator div2 = new Calculator();
+        Calculator1 div2 = new Calculator1();
         int impartire = div2.impartire(2566, 122);
         System.out.println("Rezultatul este: " + impartire);
 
         printJava();
 
-        Calculator media = new Calculator();
+        Calculator1 media = new Calculator1();
         int average = media.avg(25, 2, 15);
         System.out.println(average);
 
         printJava2();
 
-        Calculator mod = new Calculator();
+        Calculator1 mod = new Calculator1();
         int modulo1 = mod.modulo(20, 6);
         System.out.println("Restul impartirii este: " + modulo1);
 
-        Calculator celsius = new Calculator();
+        Calculator1 celsius = new Calculator1();
         float C = celsius.formulaCelsius(90f);
         System.out.println("Celsius value is: " + C);
 
-        LogicalOp op6 = new LogicalOp();
+        LogicalOp1 op6 = new LogicalOp1();
         int number = op6.checkBiggerNumber(25, 7);
         System.out.println("The biggest number is: " + number);
 
-        LogicalOp op7 = new LogicalOp();
-        String text = op7.EqualText();
-        System.out.println(text);
+        LogicalOp1 op7 = new LogicalOp1();
+        System.out.println(op7.EqualText("Ana are mere!","FastTrackIT"));
 
-        LogicalOp op8 = new LogicalOp();
-        String text1 = op8.NumberText();
-        System.out.println(text1);
+        LogicalOp1 op8 = new LogicalOp1();
+        System.out.println(op8.NumberText("RealMadrid", 7));
 
-        LogicalOp op9 = new LogicalOp();
-        String number1 = op9.SnowCm();
-        System.out.println(number1);
+        LogicalOp1 op9 = new LogicalOp1();
+        System.out.println(op9.SnowCm(23));
 
-        LogicalOp op10 = new LogicalOp();
-        String text2 = op10.EqualOrLower();
-        System.out.println(text2);
+        LogicalOp1 op10 = new LogicalOp1();
+        System.out.println(op10.EqualOrLower(3.45f));
 
-        LogicalOp op11 = new LogicalOp();
-        String text3 = op11.NumberSwitch();
-        System.out.println(text3);
+        LogicalOp1 op11 = new LogicalOp1();
+        System.out.println(op11.NumberSwitch(9));
 
-        LogicalOp op12 = new LogicalOp();
-        String text4 = op12.isNumberEven();
-        System.out.println(text4);
+        LogicalOp1 op12 = new LogicalOp1();
+        System.out.println(op12.isNumberEven(4));
 
-        LogicalOp op13 = new LogicalOp();
-        String text5 = op13.isEligibleToVote();
-        System.out.println(text5);
+        LogicalOp1 op13 = new LogicalOp1();
+        System.out.println(op13.isEligibleToVote(31));
 
-        LogicalOp op14 = new LogicalOp();
-        int number2 = op14.returnBiggerNumber();
-        System.out.println(number2);
+
+        LogicalOp1 op14 = new LogicalOp1();
+        System.out.println(op14.returnBiggerNumber(1, 2,3));
+
 
 
 
