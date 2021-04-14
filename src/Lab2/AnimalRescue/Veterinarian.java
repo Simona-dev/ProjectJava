@@ -11,4 +11,18 @@ public class Veterinarian extends People {
     public String getSpecialization() {
         return specialization;
     }
+    public void speaks (){
+        System.out.println("Good morning!");
+    }
+
+    @Override
+    public void eat(int value) {
+        super.eat(value);
+    }
+
+    @Override
+    public void speak() {
+        super.speak();
+        System.out.println("The veterinarian is speaking");
+    }
 }

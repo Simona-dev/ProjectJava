@@ -59,6 +59,30 @@ public class AppMain {
         Duck duck = new Duck();
         duck.quacking();
 
+        Labrador dogLabrador = new Labrador();
+        dogLabrador.bark();
+        dogLabrador.eat(1);
+
+        Girl girl= new Girl();
+        girl.speak();
+        girl.speaking();
+
+        Duck duck1= new Duck();
+        duck1.sleep();
+        duck1.quacking();
+
+        Veterinarian vet= new Veterinarian();
+        vet.speak();
+        vet.speaks();
+
+        MaineCoonCat cat = new MaineCoonCat();
+        cat.purr();
+        cat.eat();
+
+
+
+
+
 
 
 

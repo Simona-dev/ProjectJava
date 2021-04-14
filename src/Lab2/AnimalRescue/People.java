@@ -33,7 +33,12 @@ public class People {
     public void setAge(int age) {
         this.age = age;
     }
+
     public void eat(int value){
         System.out.println("Yummy yummy");
+    }
+    public void speak (){
+        System.out.println("");
+
     }
 }

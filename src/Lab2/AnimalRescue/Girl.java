@@ -12,7 +12,20 @@ public class Girl extends People {
     public float getMoney() {
         return money;
     }
+    public void speaking (){
+        System.out.println("Hello");
+    }
 
+    @Override
+    public void eat(int value) {
+        super.eat(value);
+    }
+
+    @Override
+    public void speak() {
+        super.speak();
+        System.out.println("The girl is speaking");
+    }
 }
 
 

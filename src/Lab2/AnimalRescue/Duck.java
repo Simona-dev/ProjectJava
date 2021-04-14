@@ -14,5 +14,14 @@ public class Duck extends Animal{
         System.out.println("Quack..quack");
     }
 
-
+    @Override
+    public void sleep() {
+        super.sleep();
+        System.out.println("The duck is sleeping");
+    }
+    @Override
+    public void speak(String text) {
+        super.speak(text);
+        System.out.println("The duck is quacking");
+    }
 }

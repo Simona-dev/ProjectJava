@@ -10,18 +10,22 @@ public class Dog extends Animal {
     public void setFur(String fur) {
         this.fur = fur;
     }
-
-    public void sleep() {
-        System.out.println("ZzzZZzz ");
-    }
-
     public void bark() {
         System.out.println("Woof");
     }
 
     public void eat(int value) {
         setWeightInKg(value);
+    }
+    @Override
+    public void speak(String text) {
+        super.speak("Dog is barking");
+    }
 
+    @Override
+    public void sleep() {
+        super.sleep();
+        System.out.println("The dog is sleeping");
     }
 }
 
