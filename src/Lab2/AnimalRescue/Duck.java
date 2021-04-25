@@ -1,6 +1,6 @@
 package Lab2.AnimalRescue;
 
-public class Duck extends Animal{
+public abstract class Duck extends Animal{
     private String feathers;
 
     public String getFeathers() {
@@ -15,13 +15,9 @@ public class Duck extends Animal{
     }
 
     @Override
-    public void sleep() {
-        super.sleep();
-        System.out.println("The duck is sleeping");
-    }
+    public abstract void sleep();
+
     @Override
-    public void speak(String text) {
-        super.speak(text);
-        System.out.println("The duck is quacking");
-    }
+    public abstract void speak() ;
+
 }

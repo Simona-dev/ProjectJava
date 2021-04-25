@@ -1,6 +1,6 @@
 package Lab2.AnimalRescue;
 
-public class Dog extends Animal {
+public abstract class Dog extends Animal {
     private String fur;
 
     public String getFur() {
@@ -10,23 +10,19 @@ public class Dog extends Animal {
     public void setFur(String fur) {
         this.fur = fur;
     }
-    public void bark() {
-        System.out.println("Woof");
-    }
+
+    public abstract void bark() ;
 
     public void eat(int value) {
         setWeightInKg(value);
     }
     @Override
-    public void speak(String text) {
-        super.speak("Dog is barking");
-    }
+    public abstract void speak();
 
     @Override
-    public void sleep() {
-        super.sleep();
-        System.out.println("The dog is sleeping");
-    }
+    public abstract void sleep() ;
+
+
 }
 
 

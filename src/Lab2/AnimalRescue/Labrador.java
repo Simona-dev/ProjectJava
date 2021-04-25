@@ -13,15 +13,17 @@ public class Labrador extends Dog{
     public void bark(){
         System.out.println("Ham ham");
     }
-
     @Override
-    public void eat(int value) {
-        super.eat(value);
+    public void eat() {
         System.out.println(getWeightInKg()+1);
     }
     @Override
-    public void speak(String text) {
-        super.speak("Dog is barking");
+    public void speak() {
+        System.out.println("Dog is barking");
     }
+    @Override
+    public void sleep() {
+        System.out.println("Labrador sleeps");
 
+    }
 }

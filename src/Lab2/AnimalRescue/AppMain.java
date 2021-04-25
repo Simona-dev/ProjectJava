@@ -3,7 +3,7 @@ package Lab2.AnimalRescue;
 public class AppMain {
     public static void main(String[] args) {
 
-        Dog dog1 = new Dog();
+        Dog dog1 = new Labrador();
         dog1.setName("Blaze");
         dog1.setHeightInCm(76);
         dog1.setColor("brown");
@@ -51,13 +51,11 @@ public class AppMain {
         System.out.println("My dog's is " + dog.getAge() + " and when he sleeps, he shores:");
         dog.sleep();
 
-        People man = new People();
-        man.eat(1);
+        People man = new Veterinarian();
+        man.eat();
         man.setName("Jack");
         System.out.println("The man names's " + man.getName());
 
-        Duck duck = new Duck();
-        duck.quacking();
 
         Labrador dogLabrador = new Labrador();
         dogLabrador.bark();
@@ -67,9 +65,6 @@ public class AppMain {
         girl.speak();
         girl.speaking();
 
-        Duck duck1= new Duck();
-        duck1.sleep();
-        duck1.quacking();
 
         Veterinarian vet= new Veterinarian();
         vet.speak();
@@ -79,9 +74,16 @@ public class AppMain {
         cat.purr();
         cat.eat();
 
+        Duck duck = new CayugaDuck();
+        duck.quacking();
 
+        Duck duck1= new CayugaDuck();
+        duck1.sleep();
+        duck1.quacking();
 
-
+        Girl girl2 = new Girl();
+        girl2.setName("Anabella");
+        System.out.println(girl2.getName());
 
 
 

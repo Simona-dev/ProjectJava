@@ -16,13 +16,12 @@ public class Veterinarian extends People {
     }
 
     @Override
-    public void eat(int value) {
-        super.eat(value);
+    public void eat() {
+        System.out.println("Yummy yummy");
     }
 
     @Override
     public void speak() {
-        super.speak();
         System.out.println("The veterinarian is speaking");
     }
 }

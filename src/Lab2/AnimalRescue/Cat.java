@@ -1,6 +1,7 @@
 package Lab2.AnimalRescue;
 
-public class Cat extends Animal {
+public abstract class Cat extends Animal {
+
     private String fur;
     public String getFur() {
         return fur;
@@ -8,25 +9,14 @@ public class Cat extends Animal {
     public void setFur(String fur) {
         this.fur = fur;
     }
-    public void purr(){
-        System.out.println("purring");
-    }
 
-
+    public abstract void purr();
 
     @Override
-    public void speak(String text) {
-        super.speak("Meow meow");
-    }
+    public abstract void speak();
     @Override
-    public void eat() {
-        super.eat();
-        System.out.println("The cat is eating");
+    public abstract void eat();
+    @Override
+    public abstract void sleep();
     }
 
-    @Override
-    public void sleep() {
-        super.sleep();
-        System.out.println("The cat is sleeping");
-    }
-}

@@ -15,16 +15,13 @@ public class Girl extends People {
     public void speaking (){
         System.out.println("Hello");
     }
-
     @Override
-    public void eat(int value) {
-        super.eat(value);
+    public void eat() {
+        System.out.println("Yummy yummy");
     }
-
     @Override
     public void speak() {
-        super.speak();
-        System.out.println("The girl is speaking");
+       System.out.println("The girl is speaking");
     }
 }
 

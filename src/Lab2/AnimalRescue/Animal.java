@@ -1,6 +1,6 @@
 package Lab2.AnimalRescue;
 
-public class Animal<sout> {
+public abstract class Animal<sout> {
     private String name;
     private int age;
     private String color;
@@ -66,15 +66,9 @@ public class Animal<sout> {
         this.name = name;
     }
 
-    public void speak(String text ){
-        System.out.println("Animal makes a sound");
-    }
-    public void sleep (){
-        System.out.println("Animal sleeping");
-            }
-    public void eat(){
-        System.out.println("Animal eating");
-    }
+    public abstract void speak();
+    public abstract void sleep ();
+    public abstract void eat();
 
 
 
