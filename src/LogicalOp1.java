@@ -1,4 +1,4 @@
-public class LogicalOp {
+public class LogicalOp1 {
 
     // Ex 2.
     public int checkBiggerNumber(int first, int second) {
@@ -11,9 +11,8 @@ public class LogicalOp {
     }
 
     //Ex 4.
-    public String EqualText() {
-        String first = "Ana are mere!";
-        String second = "FastTrackIT";
+    public String EqualText(String first, String second) {
+
         if (first.equals(second)) {
             return "Learning text comparison";
         } else if (!first.equals(second)) ;
@@ -23,21 +22,18 @@ public class LogicalOp {
     }
 
     // Ex 5.
-    public String NumberText() {
-        String text = "RealMadrid";
-        int number = 7;
+    public String NumberText(String text, int number) {
+
         if (text.equals("FastTrackIT") && number <= 3) {
             return (text + number);
         } else if (!text.equals("FastTrackIT") && number >= 4) {
             return (number + text);
-
-        }
-        return null;
+        }else  return " ";
     }
 
     // Ex 6.
-    public String SnowCm() {
-        int number = 23;
+    public String SnowCm(int number) {
+
         if (number == 6 || number > 8) {
             return ("The amount of snow this winter was: " + number + "cm");
         } else {
@@ -47,8 +43,8 @@ public class LogicalOp {
     }
 
     // Ex 7.
-    public String EqualOrLower() {
-        float number = 3.45f;
+    public String EqualOrLower(float number) {
+
         if (number > 3f && number != 4f) {
             return ("The number is greater than 3 and not equal to 4");
         } else if (number == 4f) {
@@ -58,8 +54,8 @@ public class LogicalOp {
     }
 
     // Ex 8.
-    public String NumberSwitch() {
-        int number = 5; // (int number = 1 to 9)
+    public String  NumberSwitch(int number) {
+        // (int number = 1 to 9)
         switch (number) {
             case 1:
                 System.out.println("The number is : 1");
@@ -91,40 +87,34 @@ public class LogicalOp {
             case 10:
                 System.out.println("The number is : 10");
                 break;
-        }
-        return " ";
+        } return "";
     }
 
     //Ex 9.
-    public String isNumberEven() {
-        int number = 6;
-        if (number % 2 == 0) {
-            return ("True");
-        } else if (number % 2 != 0) {
-            return ("False");
-        }
-        return "";
+    public boolean isNumberEven(int first) {
+
+        if (first    % 2 == 0) {
+            return Boolean.parseBoolean(("True"));
+        } else if (first % 2 != 0) {
+            return Boolean.parseBoolean(("False"));
+        } return Boolean.parseBoolean(" ");
+
     }
 
     //Ex 10.
-    public String isEligibleToVote() {
-        int age = 31;
+    public boolean isEligibleToVote(int number) {
 
-        if (age >= 18) {
-            System.out.println("True");
-        } else System.out.println("False");
-        return "";
+        if (number >= 18) { return Boolean.parseBoolean( "True");
+        } else return Boolean.parseBoolean( "False");
     }
 
     //Ex 11.
-    public int returnBiggerNumber() {
-        int first = 1;
-        int second = 2;
-        int third = 3;
+    public int returnBiggerNumber(int first, int second, int third) {
+
         if (first > second && first > third) {
-            return first;
+           return first;
         } else if (second > first && second > third) {
-            return second;
+           return second;
         } else return third;
 
     }

@@ -1,4 +1,4 @@
-public class Calculator {
+public class Calculator1 {
 
 //Ex 1. mutare metode din Main
 

@@ -71,9 +71,6 @@ public class Calculator {
         float result = (first + second + third) / 3;
         return result;
     }
-
-
-
     }
 
 

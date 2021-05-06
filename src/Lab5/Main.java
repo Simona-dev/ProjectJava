@@ -1,8 +1,10 @@
 package Lab5;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
-
+/*
     //Ex 1 Polimorphism
        Calculator op = new Calculator();
         System.out.println(op.adunare(2,3));
@@ -22,21 +24,23 @@ public class Main {
         System.out.println(op.avg(20,5));
         System.out.println(op.avg(20f,5,6));
         System.out.println(op.avg(20,5,6));
-
-    //2.
-        LogicalOp logicalOp = new LogicalOp();
-        int[] myArray = new int[100];
-        for (int i = 0; i<100; i++){
-            myArray[i] = i + 1 ;
-        }
-        logicalOp.printArray(myArray);
-
-    /*//3.
-        int [] myArr = new int[50];
-        logicalOp.evenArray(myArr);
-        logicalOp.printArray(myArr);
 */
-   //4.
+    //2.
+        int [] array = new int[100];
+        LogicalOp logicalOp = new LogicalOp();
+        logicalOp.array_init(array);
+        logicalOp.printArray(array);
+
+    //3.
+        int [] myArr; // = new int[50];
+        myArr = logicalOp.evenArray(array);
+        logicalOp.printArray(myArr);
+        int [] myArr1 = new int[50];
+        myArr1 = logicalOp.evenArray1(myArr1);
+        logicalOp.printArray(myArr1);
+
+
+        //4.
         int[] myArray2 = new int[10];
         for (int i = 0; i<10; i++){
             myArray2[i] = i + 1 ;
@@ -55,8 +59,20 @@ public class Main {
         int valueToFind ;
         System.out.println(logicalOp.verifyNumberIndex(array3,100));
     //7.
-        logicalOp.printForm();
+        logicalOp.printFormLines();
+        logicalOp.printFormValue(array, 10);
     //8.
+        logicalOp.printArray(array);
+        array = logicalOp.returnArray(array, 10);
+        logicalOp.printArray(array);
+
+    //9.
+        int second_smallest = 0;
+        logicalOp.printArray(array);
+        second_smallest = logicalOp.secondSmallest(array);
+        System.out.printf("Second Smallest is: " + second_smallest);
+
+
 
 
 

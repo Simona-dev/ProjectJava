@@ -8,10 +8,6 @@ public class LogicalOp {
 
     private Object List;
 
-    public void setValueInList(List<Integer> x) {
-        for (int i = 0; i < 100; i++) {
-            x.add(i);
-        }    }
 
     // Ex1. Scrieti o metoda Java, care sa primeasca parametru o Lista,
     // si sa afiseze, pe rand, toate valorile din lista, fiecare pe rand nou.

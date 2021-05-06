@@ -27,15 +27,21 @@ public class Main {
         myNumber.add(17);
 
         LogicalOp op = new LogicalOp();
-        op.printList(myList);
-        op.indexList(myList, 2);
-        op.addNumberToList(myNumber, 301);
-        op.reverseOrderList(myNumber);
-        op.Three_Parameters( myList, 0, "Weekdays are: ");
-        op.firstIndexParameter(myNumber, 101);
-        op.getIndexAndValue(myNumber);
-        op.getIndexAndValue2(myList);
-        System.out.println(op.getBiggerNumberList(myNumber));
+//        op.printList(myList);
+//        op.indexList(myList, 2);
+//        op.addNumberToList(myNumber, 301);
+//        op.reverseOrderList(myNumber);
+//        op.Three_Parameters( myList, 0, "Weekdays are: ");
+//        op.firstIndexParameter(myNumber, 101);
+//        op.getIndexAndValue(myNumber);
+//        op.getIndexAndValue2(myList);
+//        System.out.println(op.getBiggerNumberList(myNumber));
+
+
+         LogicalOp2 op2 = new LogicalOp2();
+        List<Integer> myIntList = op2.setValueInList();
+        //op2.changeIndexList();
+        System.out.println(op2.listEvenNumber(myIntList));
 
 
 
